@@ -14,4 +14,5 @@
 
 ## issue@23
 1. 关闭banner
-2. 获取运行参数 args
+2. 获取运行参数 args， 通过ApplicationArguments类
+3. 获取运行参数 args， 通过CommandLineRunner接口

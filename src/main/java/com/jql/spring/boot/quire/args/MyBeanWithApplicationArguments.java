@@ -1,4 +1,4 @@
-package com.jql.spring.boot.entity;
+package com.jql.spring.boot.quire.args;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
@@ -11,10 +11,10 @@ import java.util.List;
  * 16/8/17 20:29
  */
 @Component
-public class MyBean {
+public class MyBeanWithApplicationArguments {
 
     @Autowired
-    public MyBean(ApplicationArguments args) {
+    public MyBeanWithApplicationArguments(ApplicationArguments args) {
         boolean debug = args.containsOption("debug");
         List<String> files = args.getNonOptionArgs();
         files.stream().forEach(str -> {
