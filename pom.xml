@@ -39,7 +39,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.jql.spring.boot.Example</mainClass>
+                    <mainClass>com.jql.spring.boot.Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>
