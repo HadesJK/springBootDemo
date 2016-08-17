@@ -16,4 +16,9 @@
 1. 关闭banner
 2. 获取运行参数 args， 通过ApplicationArguments类
 3. 获取运行参数 args， 通过CommandLineRunner接口(据说实现ApplicationRunner也是一样的效果)
-总之，2和3都是在applicaiont.run(args)之前执行的。
+总之，2和3都是在applicaiont.run(args)之前执行的。i
+
+**经过issue@24测试后，发现其实2/3两种方式有区别的**
+
+## issue@24
+测试获取properties属性，spring boot有一个规则来进行合理的覆盖这些属性值。
