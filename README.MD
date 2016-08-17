@@ -15,4 +15,5 @@
 ## issue@23
 1. 关闭banner
 2. 获取运行参数 args， 通过ApplicationArguments类
-3. 获取运行参数 args， 通过CommandLineRunner接口
+3. 获取运行参数 args， 通过CommandLineRunner接口(据说实现ApplicationRunner也是一样的效果)
+总之，2和3都是在applicaiont.run(args)之前执行的。
