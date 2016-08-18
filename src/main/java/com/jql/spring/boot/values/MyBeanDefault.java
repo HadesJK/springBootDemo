@@ -23,14 +23,17 @@ public class MyBeanDefault {
     @Value("${appDesc}")
     private String appDesc;
 
+    @Value("${placeHolder}")
+    private String placeHolder;
+
     @Override
     public String toString() {
         return "MyBeanDefault{" +
                 "appName='" + appName + '\'' +
                 ", appDesc='" + appDesc + '\'' +
+                ", placeHolder='" + placeHolder + '\'' +
                 '}';
     }
-
 
     @PostConstruct
     public void display() {
