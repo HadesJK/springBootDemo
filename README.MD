@@ -26,6 +26,8 @@
 3. 使用type safe，可以注入一些值。记得使用prefix＝指定前缀 和 locations＝ 指定配置文件位置，没理解错的话，应该按名字注入的。同时需要注意的是，**和@Value很大不同，它需要getter/setter**
 4. 增加spring.profiles.active=属性在application.properties来激活一个配置文件
 
+## issue@26
+spring log
 
 
 
