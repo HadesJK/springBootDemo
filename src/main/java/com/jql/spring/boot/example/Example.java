@@ -4,7 +4,6 @@ import com.jql.spring.boot.entity.Book;
 import com.jql.spring.boot.entity.DeskWithBook;
 import com.jql.spring.boot.values.MyBeanDefault;
 import com.jql.spring.boot.values.MyBeanWithValue;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
