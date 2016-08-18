@@ -3,6 +3,7 @@ package com.jql.spring.boot.example;
 import com.jql.spring.boot.entity.Book;
 import com.jql.spring.boot.entity.DeskWithBook;
 import com.jql.spring.boot.values.MyBeanDefault;
+import com.jql.spring.boot.values.MyBeanTypeSafe;
 import com.jql.spring.boot.values.MyBeanWithValue;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -23,6 +24,9 @@ public class Example {
 
     @Resource
     private MyBeanDefault beanDefault;
+
+    @Resource
+    private MyBeanTypeSafe typeSafe;
 
     @RequestMapping("/")
     public String home() {
@@ -46,6 +50,11 @@ public class Example {
     @RequestMapping("/default/properties")
     public String defaultProperties() {
         return beanDefault.toString();
+    }
+
+    @RequestMapping("/type/safe")
+    public String typeSafe() {
+        return typeSafe.toString();
     }
 
 
