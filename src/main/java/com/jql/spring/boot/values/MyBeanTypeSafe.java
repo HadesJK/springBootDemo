@@ -11,13 +11,10 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(locations = {"classpath:/config/typesafe.properties"}, prefix = "com.jql.maven")
 public class MyBeanTypeSafe {
 
-//    @Value("${name}")
     private String name;
 
-//    @Value("${author}")
     private String author;
 
-//    @Value("$mall}")
     private String mall;
 
     @Override
