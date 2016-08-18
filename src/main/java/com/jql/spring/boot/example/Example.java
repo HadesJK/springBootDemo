@@ -2,7 +2,9 @@ package com.jql.spring.boot.example;
 
 import com.jql.spring.boot.entity.Book;
 import com.jql.spring.boot.entity.DeskWithBook;
+import com.jql.spring.boot.values.MyBeanDefault;
 import com.jql.spring.boot.values.MyBeanWithValue;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,6 +21,9 @@ public class Example {
 
     @Resource
     private MyBeanWithValue beanWithValue;
+
+    @Resource
+    private MyBeanDefault beanDefault;
 
     @RequestMapping("/")
     public String home() {
@@ -37,6 +42,11 @@ public class Example {
     @RequestMapping("/bean/value")
     public String beanValue() {
         return beanWithValue.toString();
+    }
+
+    @RequestMapping("/default/properties")
+    public String defaultProperties() {
+        return beanDefault.toString();
     }
 
 

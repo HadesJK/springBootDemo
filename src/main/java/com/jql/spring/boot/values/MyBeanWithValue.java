@@ -23,4 +23,5 @@ public class MyBeanWithValue {
                 ", value='" + value + '\'' +
                 '}';
     }
+
 }
