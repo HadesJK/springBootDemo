@@ -57,5 +57,9 @@ public class Example {
         return typeSafe.toString();
     }
 
+    @RequestMapping("/spec")
+    public String spec() {
+        return beanDefault.getSpec();
+    }
 
 }

@@ -26,6 +26,9 @@ public class MyBeanDefault {
     @Value("${placeHolder}")
     private String placeHolder;
 
+    @Value("${abc}")
+    private String spec;
+
     @Override
     public String toString() {
         return "MyBeanDefault{" +
@@ -46,5 +49,9 @@ public class MyBeanDefault {
         System.out.println(env.getProperty("appName"));
         System.out.println(env.getProperty("appDesc"));
         System.out.println("@@@===@@@");
+    }
+
+    public String getSpec() {
+        return spec;
     }
 }
